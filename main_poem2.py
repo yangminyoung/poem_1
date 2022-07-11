@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods = ['GET', 'POST'])
 def main():
     print('Start main !', request.remote_addr)
-    return render_template('main_poem2.html')
+    return render_template('index.html')
 
 @app.route('/AJAX_GET_Result', methods = ['GET', 'POST'])
 def AJAX_GET_Result():
